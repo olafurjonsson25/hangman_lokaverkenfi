@@ -6,10 +6,9 @@ class GameScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('Hangman Game - Play'),
-      ),
+      appBar: AppBar(),
       // Add your game interface here
+
       body: const Center(
         child: Text('Game Screen'),
       ),
