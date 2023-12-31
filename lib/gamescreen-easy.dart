@@ -1,10 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:hangman/keyboard.dart';
 
-
-
-class GameScreen extends StatelessWidget {
-  const GameScreen({Key? key});
+class GameScreenEasy extends StatelessWidget {
+  const GameScreenEasy ({Key? key});
 
   @override
   Widget build(BuildContext context) {
@@ -29,7 +27,6 @@ class GameScreen extends StatelessWidget {
                 print('Pressed key: $key');
               },
             ),
-
           ],
         ),
       ),

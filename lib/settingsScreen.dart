@@ -1,4 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:hangman/gamescreen-easy.dart';
+import 'package:hangman/gamescreen-hard.dart';
+import 'package:hangman/gamescreen-normal.dart';
+import 'package:hangman/gamescreen.dart';
 
 class SettingsScreen extends StatelessWidget {
   const SettingsScreen({super.key});
@@ -24,7 +28,13 @@ class SettingsScreen extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
                   ElevatedButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => GameScreenEasy()),
+                      );
+                    },
                     child: Text('Easy'),
                     style: ElevatedButton.styleFrom(
                       padding: const EdgeInsets.symmetric(horizontal: 80),
@@ -36,7 +46,13 @@ class SettingsScreen extends StatelessWidget {
                     ),
                   ),
                   ElevatedButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => GameScreenNormal()),
+                      );
+                    },
                     child: Text('Normal'),
                     style: ElevatedButton.styleFrom(
                       padding: const EdgeInsets.symmetric(horizontal: 65),
@@ -48,7 +64,13 @@ class SettingsScreen extends StatelessWidget {
                     ),
                   ),
                   ElevatedButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => GameScreenHard()),
+                      );
+                    },
                     child: Text('Hard'),
                     style: ElevatedButton.styleFrom(
                       padding: const EdgeInsets.symmetric(horizontal: 80),
