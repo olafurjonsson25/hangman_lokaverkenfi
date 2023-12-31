@@ -1,0 +1,55 @@
+import 'package:flutter/material.dart';
+
+List<String> easyWords = [
+  'apple',
+  'banana',
+  'carrot',
+  'house',
+  'cat',
+  'dog',
+  'bird',
+  'sun',
+  'moon',
+  'tree',
+  'flower',
+  'book',
+  'pen',
+  'key',
+  'hat',
+  'shoe',
+  'ball',
+  'lamp',
+  'chair',
+  'table',
+];
+
+List<String> normalWords = [
+  'computer',
+  'elephant',
+  'guitar',
+  'jungle',
+  'ocean',
+  'piano',
+  'umbrella',
+  'mountain',
+  'river',
+  'football',
+  'village',
+  'television',
+  'bicycle',
+  'penguin',
+  'library',
+  'telephone',
+  'fireplace',
+  'rainbow',
+  'backpack',
+  'garden',
+];
+
+List<String> hardWords = [
+  'extraterrestrial',
+  'onomatopoeia',
+  'xylophone',
+  'pneumonia',
+  'quantum',
+];
