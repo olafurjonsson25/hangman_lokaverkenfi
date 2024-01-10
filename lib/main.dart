@@ -53,12 +53,12 @@ class StartScreen extends StatelessWidget {
                 onPressed: () {
                   Navigator.push(
                     context,
-                    MaterialPageRoute(builder: (context) => GameScreen()),
+                    MaterialPageRoute(builder: (context) => const GameScreen()),
                   );
                 },
                 style: ElevatedButton.styleFrom(
                   padding:
-                      const EdgeInsets.symmetric(vertical: 19, horizontal: 72),
+                      const EdgeInsets.symmetric(vertical: 19, horizontal: 82),
                 ),
                 child: const Text('Play'),
               ),
@@ -67,14 +67,15 @@ class StartScreen extends StatelessWidget {
                 onPressed: () {
                   Navigator.push(
                     context,
-                    MaterialPageRoute(builder: (context) => SettingsScreen()),
+                    MaterialPageRoute(
+                        builder: (context) => const SettingsScreen()),
                   );
                 },
                 style: ElevatedButton.styleFrom(
                   padding:
                       const EdgeInsets.symmetric(vertical: 19, horizontal: 60),
                 ),
-                child: const Text('Settings'),
+                child: const Text('Challenges'),
               ),
             ],
           ),
